@@ -43,3 +43,9 @@
   @extend .sr-only;
   @extend .sr-only-focusable;
 }
+
+img, .thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
