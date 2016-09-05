@@ -22,11 +22,11 @@ $gray:                   #666 !default;
 $gray-light:             #bbb !default;
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #2196F3 !default;
-$brand-success:         #4CAF50 !default;
-$brand-info:            #9C27B0 !default;
-$brand-warning:         #ff9800 !default;
-$brand-danger:          #e51c23 !default;
+$brand-primary:         #6facc6 !default;
+$brand-success:         #18b37e !default;
+$brand-info:            #8b6cff !default;
+$brand-warning:         #f08f14 !default;
+$brand-danger:          #e33145 !default;
 
 
 //== Scaffolding
@@ -34,9 +34,9 @@ $brand-danger:          #e51c23 !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #f4f4f4 !default;
 //** Global text color on `<body>`.
-$text-color:            $gray !default;
+$text-color:            #4a484a !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -50,22 +50,22 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "texgyreadventorregular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          13px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-h1:            56px !default;
-$font-size-h2:            45px !default;
-$font-size-h3:            34px !default;
-$font-size-h4:            24px !default;
+$font-size-h1:            40px !default;
+$font-size-h2:            34px !default;
+$font-size-h3:            28px !default;
+$font-size-h4:            22px !default;
 $font-size-h5:            20px !default;
-$font-size-h6:            14px !default;
+$font-size-h6:            16px !default;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.846 !default; // 20/14
@@ -76,7 +76,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 $headings-font-family:    inherit !default;
 $headings-font-weight:    400 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          #444 !default;
+$headings-color:          $text-color !default;
 
 
 //== Iconography
@@ -154,7 +154,7 @@ $btn-font-weight:                normal !default;
 
 $btn-default-color:              #444 !default;
 $btn-default-bg:                 #fff !default;
-$btn-default-border:             transparent !default;
+$btn-default-border:             #444 !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
@@ -208,7 +208,7 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             $brand-primary !default;
 
 //** Placeholder text color
 $input-color-placeholder:        $gray-light !default;
@@ -509,11 +509,12 @@ $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
 $state-info-text:                $brand-info !default;
-$state-info-bg:                  #e1bee7 !default;
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+$state-info-bg:                  #6facc6 !default;
+$state-info-border:              #6facc6 !default;
+//$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
 $state-warning-text:             $brand-warning !default;
-$state-warning-bg:               #ffe0b2 !default;
+$state-warning-bg:               #F6B66F !default;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
 
 $state-danger-text:              $brand-danger !default;
@@ -677,14 +678,14 @@ $progress-bar-info-bg:        $brand-info !default;
 //##
 
 //** Background color on `.list-group-item`
-$list-group-bg:                 #fff !default;
+$list-group-bg:                 $body-bg !default;
 //** `.list-group-item` border color
-$list-group-border:             #ddd !default;
+$list-group-border:             #434857 !default;
 //** List group border radius
 $list-group-border-radius:      $border-radius-base !default;
 
 //** Background color of single list items on hover
-$list-group-hover-bg:           #f5f5f5 !default;
+$list-group-hover-bg:           $body-bg !default;
 //** Text color of active list items
 $list-group-active-color:       $component-active-color !default;
 //** Background color of active list items
@@ -710,18 +711,18 @@ $list-group-link-heading-color: #333 !default;
 //
 //##
 
-$panel-bg:                    #fff !default;
+$panel-bg:                    #FFF !default;
 $panel-body-padding:          15px !default;
 $panel-heading-padding:       10px 15px !default;
 $panel-footer-padding:        $panel-heading-padding !default;
 $panel-border-radius:         $border-radius-base !default;
 
 //** Border color for elements within panels
-$panel-inner-border:          #ddd !default;
-$panel-footer-bg:             #f5f5f5 !default;
+$panel-inner-border:          #434857 !default;
+$panel-footer-bg:             $body-bg !default;
 
-$panel-default-text:          $gray-dark !default;
-$panel-default-border:        #ddd !default;
+$panel-default-text:          $text-color !default;
+$panel-default-border:        $text-color !default;
 $panel-default-heading-bg:    #f5f5f5 !default;
 
 $panel-primary-text:          #fff !default;
@@ -744,7 +745,9 @@ $panel-danger-text:           #fff !default;
 $panel-danger-border:         $state-danger-border !default;
 $panel-danger-heading-bg:     $brand-danger !default;
 
-
+$panel-dark-text:             #fff !default;
+$panel-dark-border:           $gray-dark;
+$panel-dark-heading-bg:       $gray-dark;
 //== Thumbnails
 //
 //##

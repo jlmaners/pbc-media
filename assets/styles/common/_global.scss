@@ -1,1 +1,61 @@
+@font-face {
+  font-family: 'texgyreadventorregular';
+  src: url('../fonts/texgyreadventor-regular-webfont.eot');
+  src: url('../fonts/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/texgyreadventor-regular-webfont.woff') format('woff'),
+  url('../fonts/texgyreadventor-regular-webfont.ttf') format('truetype'),
+  url('../fonts/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+.panel-dark {
+  @include panel-variant($panel-dark-border, $panel-dark-text, $panel-dark-heading-bg, $panel-dark-border);
+}
+
+.btn-default.btn-outline {
+  @include button-variant($btn-default-bg, transparent, $btn-default-bg);
+  &:hover {
+    background: $btn-default-bg;
+  }
+}
+
+.btn-primary.btn-outline {
+  @include button-variant($btn-primary-bg, transparent, $btn-primary-bg);
+  &:hover {
+    background: $btn-primary-bg;
+    color: #FFF;
+  }
+}
+
+.btn-success.btn-outline {
+  @include button-variant($btn-success-bg, transparent, $btn-success-bg);
+  &:hover {
+    background: $btn-success-bg;
+    color: #FFF;
+  }
+}
+
+.btn-info.btn-outline {
+  @include button-variant($btn-info-bg, transparent, $btn-info-bg);
+  &:hover {
+    background: $btn-info-bg;
+    color: #FFF;
+  }
+}
+
+.btn-warning.btn-outline {
+  @include button-variant($btn-warning-bg, transparent, $btn-warning-bg);
+  &:hover {
+    background: $btn-warning-bg;
+    color: #FFF;
+  }
+}
+
+.btn-danger.btn-outline {
+  @include button-variant($btn-danger-bg, transparent, $btn-danger-bg);
+  &:hover {
+    background: $btn-danger-bg;
+    color: #FFF;
+  }
+}

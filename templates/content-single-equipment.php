@@ -7,14 +7,14 @@
       <div class="row">
         <?php if(current_user_can('edit_others_pages')) :?>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right">
-          <div class="panel panel-default">
+          <div class="panel panel-warning">
             <div class="panel-heading">
               <h3 class="panel-title">Web GUI Control</h3>
             </div>
             <div class="panel-body">
               <p><strong>Username:</strong> <code><?php the_field('web_cp_username'); ?></code><br />
               <strong>Password:</strong> <code><?php the_field('web_cp_password'); ?></code> </p>
-              <p><a href="<?php the_field('web_address') ?>" target="_blank">Launch <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></p>
+              <p><a href="<?php the_field('web_address') ?>" target="_blank" class="btn btn-primary btn-outline">Launch <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></p>
             </div>
           </div>
         </div>

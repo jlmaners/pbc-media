@@ -1,0 +1,37 @@
+header.banner {
+	padding: 2em 0 2em 0;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-brand {
+	padding: 0 15px;
+	line-height: auto;
+	margin-top: 15px;
+}
+
+.navbar-default .navbar-toggle {
+	background-color: $brand-warning !important;
+	& .icon-bar {
+		background-color: #FFF;
+	}
+	&:hover {
+		background-color: #F6B66F;
+	}
+}
+
+header .navbar {
+	margin-bottom: 0;
+}
+ul.navbar-nav {
+	@media (min-width: $screen-sm-min) {
+		margin-left: 2em;
+	}
+	
+}
+ul.navbar-nav li a{
+	color: #7d7b7d;
+
+	&:hover {
+		color: $brand-primary;
+	}
+}
