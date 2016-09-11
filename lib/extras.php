@@ -40,3 +40,12 @@ function sage_wrap_base_cpts($templates) {
   return $templates; // Return our modified array with base-$cpt.php at the front of the queue
 }
 add_filter('sage/wrap_base', __NAMESPACE__ . '\\sage_wrap_base_cpts'); // Add our function to the sage/wrap_base filter
+
+function pbc_media_term_filter($url, $term, $taxonomy)
+{
+  if($taxonomy == 'location' || $taxonomy == 'equipment-type'){
+    return str_replace($taxonomy, 'equipment/'.$taxonomy, $url);
+  }
+}
+add_filter( 'term_link', __NAMESPACE__ . '\\pbc_media_term_filter',10,3 );
+

@@ -22,13 +22,24 @@
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <?php
           if(has_post_thumbnail()) {
+            ?>
+            <div class="panel panel-default">
+              
+              <div class="panel-body">
+              
+            <?php
             the_post_thumbnail();
+            ?>
+            </div>
+            </div>
+            <?php
           }
           ?>
         </div>
       </div>
-
-      <table class="table">
+      <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+        <table class="table">
         <tbody>
           <tr>
           <th>Manufacturer:</th>
@@ -86,6 +97,8 @@
           ?>
         </tbody>
       </table>
+      </div>
+      </div>
       <?php the_content(); ?>
     </div>
     <footer>
